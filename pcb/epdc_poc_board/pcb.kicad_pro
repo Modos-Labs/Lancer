@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.11
         }
       },
       "diff_pair_dimensions": [
@@ -435,8 +435,6 @@
           "/fpga_vi/VGA_R5",
           "/fpga_vi/VGA_R6",
           "/fpga_vi/VGA_R7",
-          "/fpga_vi/VGA_SCL",
-          "/fpga_vi/VGA_SDA",
           "/fpga_vi/VGA_VS"
         ],
         "pcb_color": "rgb(189, 20, 255)",
@@ -679,6 +677,12 @@
       "version": 2
     },
     "net_colors": {
+      "+1V1": "rgb(255, 92, 56)",
+      "+1V35": "rgb(185, 61, 143)",
+      "+1V8": "rgb(71, 216, 193)",
+      "+2V5": "rgb(221, 212, 78)",
+      "+3V3": "rgb(179, 228, 50)",
+      "+5V": "rgb(255, 122, 107)",
       "GND": "rgb(0, 94, 255)"
     }
   },
