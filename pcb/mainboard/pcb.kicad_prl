@@ -3,9 +3,7 @@
     "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
-    "hidden_nets": [
-      "GND"
-    ],
+    "hidden_nets": [],
     "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
@@ -16,13 +14,13 @@
     },
     "ratsnest_display_mode": 0,
     "selection_filter": {
-      "dimensions": false,
+      "dimensions": true,
       "footprints": true,
       "graphics": true,
-      "keepouts": false,
+      "keepouts": true,
       "lockedItems": true,
-      "otherItems": false,
-      "pads": false,
+      "otherItems": true,
+      "pads": true,
       "text": true,
       "tracks": true,
       "vias": true,

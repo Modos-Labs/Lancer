@@ -117,7 +117,8 @@
         "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.09999999999999999,
         "min_via_annular_width": 0.049999999999999996,
-        "min_via_diameter": 0.44999999999999996
+        "min_via_diameter": 0.44999999999999996,
+        "use_height_for_length_calcs": true
       },
       "track_widths": [
         0.0,
@@ -684,16 +685,7 @@
     "meta": {
       "version": 2
     },
-    "net_colors": {
-      "+1V0": "rgb(255, 117, 0)",
-      "+1V35": "rgb(149, 177, 0)",
-      "+1V8": "rgb(255, 18, 125)",
-      "+3V3": "rgb(215, 202, 7)",
-      "+3V3_SB": "rgb(185, 157, 5)",
-      "+5V": "rgb(255, 0, 224)",
-      "/power/1V0_ARM": "rgb(255, 181, 67)",
-      "GND": "rgb(0, 51, 134)"
-    }
+    "net_colors": null
   },
   "pcbnew": {
     "last_paths": {
@@ -707,7 +699,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
+    "annotate_start_num": 1000,
     "drawing": {
       "default_bus_thickness": 12.0,
       "default_junction_size": 36.0,
@@ -791,6 +783,10 @@
     [
       "375e0a10-f948-48fc-a4eb-553ac6c7cac0",
       "wifibt"
+    ],
+    [
+      "2848f0a9-0b2b-4a69-a3ec-4c1c322fc390",
+      "ethernet"
     ]
   ],
   "text_variables": {}
