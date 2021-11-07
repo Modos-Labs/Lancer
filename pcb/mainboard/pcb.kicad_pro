@@ -115,7 +115,7 @@
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.13999999999999999,
+        "min_track_width": 0.127,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.6,
         "use_height_for_length_calcs": true
@@ -124,6 +124,7 @@
         0.0,
         0.15,
         0.2,
+        0.25,
         0.3,
         0.5,
         0.6,
@@ -384,20 +385,57 @@
       },
       {
         "bus_width": 12.0,
-        "clearance": 0.15,
-        "diff_pair_gap": 0.1,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.127,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.25,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "DSI",
         "nets": [
+          "DSI_CN",
+          "DSI_CP",
+          "DSI_D0N",
+          "DSI_D0P",
+          "DSI_D1N",
+          "DSI_D1P",
+          "DSI_D2N",
+          "DSI_D2P",
+          "DSI_D3N",
+          "DSI_D3P",
           "LCD_LID"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.15,
+        "track_width": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.127,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.25,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "HDMI",
+        "nets": [
+          "HDMI_TX0N",
+          "HDMI_TX0P",
+          "HDMI_TX1N",
+          "HDMI_TX1P",
+          "HDMI_TX2N",
+          "HDMI_TX2P",
+          "HDMI_TXCN",
+          "HDMI_TXCP"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6.0
@@ -405,14 +443,43 @@
       {
         "bus_width": 12.0,
         "clearance": 0.15,
-        "diff_pair_gap": 0.1,
+        "diff_pair_gap": 0.127,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.25,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PCIE",
+        "nets": [
+          "PCIE_CLK_N",
+          "PCIE_CLK_P",
+          "PCIE_RX0_N",
+          "PCIE_RX0_P",
+          "PCIE_TX0_N",
+          "PCIE_TX0_P"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.127,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.4,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "USB",
         "nets": [
+          "/usb/USB_D1+",
+          "/usb/USB_D1-",
+          "/usb/USB_D2+",
+          "/usb/USB_D2-",
           "USB_HOST_DN",
           "USB_HOST_DP",
           "USB_OTG_DN",
@@ -420,7 +487,7 @@
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.15,
+        "track_width": 0.4,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6.0
@@ -429,7 +496,11 @@
     "meta": {
       "version": 2
     },
-    "net_colors": null
+    "net_colors": {
+      "+3V3": "rgb(218, 215, 0)",
+      "+5V": "rgb(255, 142, 30)",
+      "+SYS": "rgb(255, 37, 207)"
+    }
   },
   "pcbnew": {
     "last_paths": {
