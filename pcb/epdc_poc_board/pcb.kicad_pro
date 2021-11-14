@@ -427,8 +427,6 @@
         "microvia_drill": 0.1,
         "name": "DSI",
         "nets": [
-          "DSI_IN_CN",
-          "DSI_IN_CP",
           "DSI_IN_D0N",
           "DSI_IN_D0P",
           "DSI_IN_D1N",
@@ -706,7 +704,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
