@@ -1,22 +1,23 @@
-Lancer is the codename of our EPD tablet prototype.
+Lancer is the codename of our EPD laptop prototype.
 
 # Specifications
 
 The specification listed are preliminary and subject to change.
 
-- SoC: Amlogic S922X (4x Cortex-A73 @ 2.2 GHz + 2x Cortex-A53 @ 2.0 GHz) (Will have RISC-V option with StarFive JH7110 SoC when it become available)
+- SoC: Amlogic S922X (4x Cortex-A73 @ 2.2 GHz + 2x Cortex-A53 @ 2.0 GHz)
 - RAM: 4GB DDR4 32bit
 - SSD: User-replaceable M.2 SSD
-- Network: 802.11ac + BT4.0
-- Screen: 10.1" DES E-paper display
-- Battery: 2x User-replaceable LiFePO4 18650 battery
+- Network: 802.11n + BT4.0
+- Screen: 13.3" 1600x1200 E-paper display via Caster EPDC (over MIPI DSI)
+- Battery: Compatible with T4x battery
 - Ports:
   - USB 2.0 Type-A Host x2
-  - USB 2.0 Type-C UFP with Power Delivery x1
+  - USB 2.0 Micro-B Device
+  - USB Serial (Micro-B)
+  - 10/100Mbps Ethernet
   - 3.5 mm Headphone Jack
   - 3.5 mm Line-In Jack
-  - MicroHDMI 2.0 Output
-  - MicroHDMI 1.4 Input
+  - HDMI Output
 
 # License
 
